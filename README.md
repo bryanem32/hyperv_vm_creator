@@ -1,3 +1,5 @@
+# Requirements
+Download a Windows 10 or 11 ISO Install. Save as an **".iso"** file
 # 1. Hyper-V VM Creator
 Right-click the program and select **Run As Administrator**.
 ## Parameters
