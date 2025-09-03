@@ -1,10 +1,6 @@
-# Hyper-V VM Creator
-
-After extracting to your desired folder, both programs **must be run as Administrator**.  
+# 1. Hyper-V VM Creator
 Right-click the program and select **Run As Administrator**.
-
 ## Parameters
-
 | Parameter | Description | Notes / Recommendations |
 |-----------|-------------|------------------------|
 | **VM Name** | Name of the virtual machine | Also used as the hostname |
@@ -20,9 +16,9 @@ Right-click the program and select **Run As Administrator**.
 | **Enable Dynamic Memory** | Allow dynamic memory allocation | Keep **unchecked** for GPU Passthrough |
 | **Enable Enhanced Session Mode** | Enable enhanced session mode | Keep **unchecked** for GPU Passthrough |
 | **Start VM after creation** | Launch VM immediately after creation | Recommended to check for convenience |
-
 ## Usage Notes
-
+- If the program detects hyper-v is not running or installed, it will prompt to install hyper-v.  After enabling, it will prompt to restart the PC or not.
+- PC needs to be restarted if hyper-v had to be enabled.
 - Let the VM boot up and reboot a few times.  
 - You may see drives being mounted and unmounted — this is normal.  
 - The process:
@@ -30,3 +26,10 @@ Right-click the program and select **Run As Administrator**.
   2. Applies Windows images using **DISM**  
 - **GPU Passthrough:** Do not enable Checkpoints, Dynamic Memory, or Enhanced Session Mode for proper GPU functionality.
 
+# 2. Virtual Machine GPU Update
+Right-click the program and select **Run As Administrator**.
+## Parameters
+- Click on the checkbox on the VM's for the GPU drivers to be updated
+- Click on the checkbox "Start VM after update" to start the VMs selected after updating.
+## Usage Notes
+- Updating the GPU requires for the VMs to shutdown.  The program will shutdown the VMs automatically
