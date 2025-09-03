@@ -5,11 +5,12 @@ Right-click the program and select **Run As Administrator**.
 |-----------|-------------|------------------------|
 | **VM Name** | Name of the virtual machine | Also used as the hostname |
 | **VM Location** | Folder where the VM and all files will be stored | Example: `C:\MyVMs`. A subdirectory with the VM Name is created automatically |
-| **ISO Location** | Path to the Windows installation ISO | Supports **Windows 10 2004 or later** and **Windows 11** |
+| **Intall ISO File** | Path to the Windows installation ISO | Supports **Windows 10 2004 or later** and **Windows 11** |
+| **Win Edition** | Dropdown of detected Windows Editions | Select **PRO** for GPU passthrough support |
 | **Local User** | User account created for the VM | Automatically logged in on first boot |
-| **Local Password** | Password for the local user | — |
-| **vCPUs** | Number of CPUs allocated to the VM | — |
-| **Memory (GB)** | Amount of memory allocated to the VM | — |
+| **Local Password** | Password for the local user | Remember this! |
+| **vCPUs** | Number of CPUs allocated to the VM | Recommended **4 vCPUs or more** |
+| **Memory (GB)** | Amount of memory allocated to the VM | Recommended **8GB or more** |
 | **Disk Size (GB)** | Size of the main VM hard drive (C:\) | Recommended **60GB or more** |
 | **Virtual Switch** | Hyper-V virtual switch to use | Program detects existing switches; usually **Default Switch** |
 | **Enable Checkpoints** | Enable VM checkpoints | Keep **unchecked** for GPU Passthrough |
