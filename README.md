@@ -39,3 +39,6 @@ Right-click the program and select **Run As Administrator**.
 - Updating the GPU requires for the VMs to shutdown.  The program will shutdown the VMs automatically
 - This program is separate from the Hyper-V VM Creator because this can be used independently after the drivers are updated on the Main Host PC
 - This program is only tested/verified to work on VMs created by the Hyper-V VM Creator.
+## Known Issues
+- Display Resolution in autounattend.xml file currently does not work
+- Windows Autoplay may try to format VHDX files during mounting for DISM, driver copy or autounattend.xml injection. Hit cancel or ignore if this happens.
