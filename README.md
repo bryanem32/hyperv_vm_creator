@@ -8,7 +8,7 @@ Right-click the program and select **Run As Administrator**.
 | **VM Name** | Name of the virtual machine | Also used as the hostname |
 | **VM Location** | Folder where the VM and all files will be stored | Example: `C:\MyVMs`. A subdirectory with the VM Name is created automatically |
 | **Intall ISO File** | Path to the Windows installation ISO | Supports **Windows 10 2004 or later** and **Windows 11** |
-| **Win Edition** | Dropdown of detected Windows Editions | Select **PRO** for GPU passthrough support |
+| **Win Edition** | Dropdown of detected Windows Editions | Recommend **PRO** Edition |
 | **Local User** | User account created for the VM | Automatically logged in on first boot |
 | **Local Password** | Password for the local user | Remember this! |
 | **vCPUs** | Number of CPUs allocated to the VM | Recommended **4 vCPUs or more** |
