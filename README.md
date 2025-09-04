@@ -1,4 +1,4 @@
-# YouTube Video of Scripts in action
+# YouTube Video of Programs in action
 https://www.youtube.com/watch?v=MmZiHnfRjbc
 # Requirements
 Download a Windows 10 or 11 ISO Install. Save as an **".iso"** file
