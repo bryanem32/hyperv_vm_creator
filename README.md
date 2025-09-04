@@ -13,9 +13,9 @@ Right-click the program and select **Run As Administrator**.
 | **Win Edition** | Dropdown of detected Windows Editions | Recommend **PRO** Edition |
 | **Local User** | User account created for the VM | Automatically logged in on first boot |
 | **Local Password** | Password for the local user | Remember this! |
-| **vCPUs** | Number of CPUs allocated to the VM | Recommended **4 vCPUs or more** |
-| **Memory (GB)** | Amount of memory allocated to the VM | Recommended **8GB or more** |
-| **Disk Size (GB)** | Size of the main VM hard drive (C:\) | Recommended **60GB or more** |
+| **vCPUs** | Number of CPUs allocated to the VM | Recommend **4 vCPUs or more** |
+| **Memory (GB)** | Amount of memory allocated to the VM | Recommend **8GB or more** |
+| **Disk Size (GB)** | Size of the main VM hard drive (C:\) | Recommend **60GB or more** |
 | **Virtual Switch** | Hyper-V virtual switch to use | Program detects existing switches; usually **Default Switch** |
 | **Enable Checkpoints** | Enable VM checkpoints | Keep **unchecked** for GPU Passthrough |
 | **Enable Dynamic Memory** | Allow dynamic memory allocation | Keep **unchecked** for GPU Passthrough |
@@ -42,6 +42,6 @@ Right-click the program and select **Run As Administrator**.
 - Updating the GPU requires for the VMs to shutdown.  The program will shutdown the VMs automatically
 - This program is separate from the Hyper-V VM Creator because this can be used independently after the drivers are updated on the Main Host PC
 - This program is only tested/verified to work on VMs created by the Hyper-V VM Creator.
-## Known Issues
+# Known Issues
 - Setting Display Resolution currently does not work during VM creation and needs to be manually updated after boot up.
 - Windows Autoplay may try to format VHDX files during mounting for DISM, driver copy or autounattend.xml injection. Hit cancel or ignore if this happens.
