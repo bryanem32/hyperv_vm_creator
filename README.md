@@ -41,5 +41,5 @@ Right-click the program and select **Run As Administrator**.
 - This program is separate from the Hyper-V VM Creator because this can be used independently after the drivers are updated on the Main Host PC
 - This program is only tested/verified to work on VMs created by the Hyper-V VM Creator.
 ## Known Issues
-- Setting Display Resolution currently does not work
+- Setting Display Resolution currently does not work during VM creation and needs to be manually updated after boot up.
 - Windows Autoplay may try to format VHDX files during mounting for DISM, driver copy or autounattend.xml injection. Hit cancel or ignore if this happens.
