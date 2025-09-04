@@ -20,6 +20,7 @@ Right-click the program and select **Run As Administrator**.
 | **Enable Enhanced Session Mode** | Enable enhanced session mode | Keep **unchecked** for GPU Passthrough |
 | **Start VM after creation** | Launch VM immediately after creation | Recommended to check for convenience |
 ## Usage Notes
+- Powershell Scripts are available to be ran directly, .exe files are compiled with ps2exe for convenience.
 - If the program detects hyper-v is not running or installed, it will prompt to install hyper-v.  After enabling, it will prompt to restart the PC or not.
 - PC needs to be restarted if hyper-v had to be enabled.
 - Let the VM boot up and reboot a few times.  
