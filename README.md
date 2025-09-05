@@ -48,3 +48,4 @@ Right-click the program and select **Run As Administrator**.
 - v4: Initial Release
 - v5: Fixed Timezone issue
 - v6: Fixed Host Autoplay issue | Hyper-V VM Creator program can only be ran once now
+- v7: Changed Hyper-V running check to include non-english OS languages
