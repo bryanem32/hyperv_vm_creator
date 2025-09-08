@@ -43,10 +43,11 @@ Right-click the program and select **Run As Administrator**.
 - This program is separate from the Hyper-V VM Creator because this can be used independently after the drivers are updated on the Main Host PC
 - This program is only tested/verified to work on VMs created by the Hyper-V VM Creator.
 # Known Issues
-- Setting Display Resolution currently does not work during VM creation and needs to be manually updated after boot up.
+- None
 # What's New
 - v4: Initial Release
 - v5: Fixed Timezone issue
 - v6: Fixed Host Autoplay issue | Hyper-V VM Creator program can only be ran once now
 - v7: Changed Hyper-V running check to include non-english OS languages
 - v8: Fixed Windows Edition detection to force DISM output to English
+- v9: Added VM Resolution
