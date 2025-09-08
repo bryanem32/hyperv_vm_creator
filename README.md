@@ -17,6 +17,7 @@ Right-click the program and select **Run As Administrator**.
 | **Memory (GB)** | Amount of memory allocated to the VM | Recommend **8GB or more** |
 | **Disk Size (GB)** | Size of the main VM hard drive (C:\) | Recommend **60GB or more** |
 | **Virtual Switch** | Hyper-V virtual switch to use | Program detects existing switches; usually **Default Switch** |
+| **VM Resolution** | VM Display Resolution | Display Resolution modified by QRes.exe |
 | **Enable Checkpoints** | Enable VM checkpoints | Keep **unchecked** for GPU Passthrough |
 | **Enable Dynamic Memory** | Allow dynamic memory allocation | Keep **unchecked** for GPU Passthrough |
 | **Enable Enhanced Session Mode** | Enable enhanced session mode | Keep **unchecked** for GPU Passthrough |
@@ -32,6 +33,7 @@ Right-click the program and select **Run As Administrator**.
   2. Applies Windows images using **DISM**  
 - **GPU Passthrough:** Do not enable Checkpoints, Dynamic Memory, or Enhanced Session Mode for proper GPU functionality.
 - VM will inherit the Host PC's keyboard, language, locale and timezone settings
+- Display Resolution on bootup uses QRes.exe Version 1.0.9.7 (https://sourceforge.net/projects/qres/)
 
 # 2. Virtual Machine GPU Update
 Right-click the program and select **Run As Administrator**.
