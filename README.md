@@ -1,7 +1,10 @@
 # YouTube Video of Programs in action
 https://www.youtube.com/watch?v=MmZiHnfRjbc
 # Requirements
-Download a Windows 10 or 11 ISO Install. Save as an **".iso"** file
+- Windows 10 or 11 ISO Install. Save as an **".iso"** file
+- Hyper-V Host (Main PC) needs to be Windows 10/11 Pro Edition
+- VMs can be Windows 10/11 Home or Pro Edition
+- GPU Partitioning and GPU Passthrough require driver support for WDDM 2.5 (NVIDIA GTX 10-Series or newer, AMD RX Vega or newer)
 # 1. Hyper-V VM Creator
 Right-click the program and select **Run As Administrator**.
 ## Parameters
