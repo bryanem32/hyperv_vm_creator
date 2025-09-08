@@ -17,7 +17,7 @@ Right-click the program and select **Run As Administrator**.
 | **Memory (GB)** | Amount of memory allocated to the VM | Recommend **8GB or more** |
 | **Disk Size (GB)** | Size of the main VM hard drive (C:\) | Recommend **60GB or more** |
 | **Virtual Switch** | Hyper-V virtual switch to use | Program detects existing switches; usually **Default Switch** |
-| **VM Resolution** | VM Display Resolution | Display Resolution modified by QRes.exe |
+| **VM Resolution** | VM Display Resolution | Display Resolution modified by QRes.exe on bootup|
 | **Enable Checkpoints** | Enable VM checkpoints | Keep **unchecked** for GPU Passthrough |
 | **Enable Dynamic Memory** | Allow dynamic memory allocation | Keep **unchecked** for GPU Passthrough |
 | **Enable Enhanced Session Mode** | Enable enhanced session mode | Keep **unchecked** for GPU Passthrough |
