@@ -44,6 +44,7 @@ Right-click the program and select **Run As Administrator**.
 - Updating the GPU requires for the VMs to shutdown.  The program will shutdown the VMs automatically
 - This program is separate from the Hyper-V VM Creator because this can be used independently after the drivers are updated on the Main Host PC
 - This program is only tested/verified to work on VMs created by the Hyper-V VM Creator.
+- Microsoft Hyper-V limits Guest VM GPU Passthrough VRAM to 4GB, regardless of Host PC's GPU VRAM size
 # Known Issues
 - None
 # What's New
