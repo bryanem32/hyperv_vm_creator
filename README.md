@@ -4,7 +4,7 @@ https://www.youtube.com/watch?v=MmZiHnfRjbc
 - Windows 10 or 11 ISO Install. Save as an **".iso"** file
 - Hyper-V Host (Main PC) needs to be Windows 10/11 Pro Edition
 - VMs can be Windows 10/11 Home or Pro Edition
-- GPU Partitioning and GPU Passthrough require driver support for WDDM 2.5 (NVIDIA GTX 10-Series or newer, AMD RX Vega or newer)
+- GPU Partitioning require driver support for WDDM 2.5 (NVIDIA GTX 10-Series or newer, AMD RX Vega or newer)
 # 1. Hyper-V VM Creator
 Right-click the program and select **Run As Administrator**.
 ## Parameters
@@ -34,7 +34,7 @@ Right-click the program and select **Run As Administrator**.
 - The process:
   1. Creates the VHDX (VM disk)  
   2. Applies Windows images using **DISM**  
-- **GPU Passthrough:** Do not enable Checkpoints, Dynamic Memory, or Enhanced Session Mode for proper GPU functionality.
+- **GPU Partitioning:** Do not enable Checkpoints, Dynamic Memory, or Enhanced Session Mode for proper GPU functionality.
 - VM will inherit the Host PC's keyboard, language, locale and timezone settings
 - Display Resolution on bootup uses QRes.exe Version 1.0.9.7 (https://sourceforge.net/projects/qres/)
 
@@ -44,10 +44,10 @@ Right-click the program and select **Run As Administrator**.
 - Click on the checkbox on the VM's for the GPU drivers to be updated
 - Click on the checkbox "Start VM after update" to start the VMs selected after updating.
 ## Usage Notes
-- Updating the GPU requires for the VMs to shutdown.  The program will shutdown the VMs automatically
+- Updating the GPU drivers requires for the VMs to shutdown.  The program will shutdown the VMs automatically
 - This program is separate from the Hyper-V VM Creator because this can be used independently after the drivers are updated on the Main Host PC
 - This program is only tested/verified to work on VMs created by the Hyper-V VM Creator.
-- Microsoft Hyper-V limits Guest VM GPU Passthrough VRAM to 4GB, regardless of Host PC's GPU VRAM size
+- Microsoft Hyper-V limits Guest VM GPU Partitioning VRAM to 4GB, regardless of Host PC's GPU VRAM size
 # Known Issues
 - None
 # What's New
