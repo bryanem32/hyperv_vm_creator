@@ -1,10 +1,14 @@
 # YouTube Video of Programs in action
 https://www.youtube.com/watch?v=MmZiHnfRjbc
 # Requirements
+- Host PC that is capable of Virtualization
+  1. Intel-based: Enable in the BIOS **Intel Virtualization Technology, Intel VT, VT-x, or Virtualization Extensions**
+  2. AMD-based: Enable in the BIOS **AMD-V or AMD SVM**
 - Windows 10 or 11 ISO Install. Save as an **".iso"** file
-- Hyper-V Host (Main PC) needs to be Windows 10/11 Pro Edition
+- Hyper-V Host (Main PC) needs to be Windows 10/11 **Pro Edition**
 - VMs can be Windows 10/11 Home or Pro Edition
-- GPU Partitioning require driver support for WDDM 2.5 (NVIDIA GTX 10-Series or newer, AMD RX Vega or newer)
+- GPU Partitioning require driver support for WDDM 2.5 (**NVIDIA GTX 10-Series or newer, AMD RX Vega or newer**)
+- **IMPORTANT:** If using an AMD-based CPU, it is recommended to disable the integrated graphics adapter in the BIOS. GPU Partitioning might utilize the AMD Integrated GPU instead of the discreet GPU
 # 1. Hyper-V VM Creator
 Right-click the program and select **Run As Administrator**.
 ## Parameters
@@ -25,6 +29,9 @@ Right-click the program and select **Run As Administrator**.
 | **Enable Dynamic Memory** | Allow dynamic memory allocation | Keep **unchecked** for GPU Passthrough |
 | **Enable Enhanced Session Mode** | Enable enhanced session mode | Keep **unchecked** for GPU Passthrough |
 | **Start VM after creation** | Launch VM immediately after creation | Recommended to check for convenience |
+| **Parsec (Per Computer)** | Download and install latest Parsec with Per Computer option | Access the VM through Parsec |
+| **VB-Audio Cable** | Download and install VBCABLE_Driver_Pack45.zip from vb-audio.com | Adds sound to the VM with Parsec |
+| **Virtual Display Driver** | Download and install usbmmidd_v2.zip from amyuni.com | Creates a virtual display driver, allows Parsec to access the VM even if the console is not connected |
 ## Usage Notes
 - Powershell Scripts are available to be ran directly. The binary *.exe files are compiled with ps2exe for convenience.
 - If the program detects hyper-v is not running or installed, it will prompt to install hyper-v.  After enabling, it will prompt to restart the PC or not.
@@ -37,6 +44,10 @@ Right-click the program and select **Run As Administrator**.
 - **GPU Partitioning:** Do not enable Checkpoints, Dynamic Memory, or Enhanced Session Mode for proper GPU functionality.
 - VM will inherit the Host PC's keyboard, language, locale and timezone settings
 - Display Resolution on bootup uses QRes.exe Version 1.0.9.7 (https://sourceforge.net/projects/qres/)
+- Optional Software installation requires VM Internet Access
+  1. Latest Parsec is downloaded and installed with the "Per Computer" option
+  2. VB Audio Cable is downloaded from www.vb-cable.com
+  3. Virtual Display Adapter is downloaded from www.amyuni.com
 
 # 2. Virtual Machine GPU Update
 Right-click the program and select **Run As Administrator**.
@@ -48,6 +59,7 @@ Right-click the program and select **Run As Administrator**.
 - This program is separate from the Hyper-V VM Creator because this can be used independently after the drivers are updated on the Main Host PC
 - This program is only tested/verified to work on VMs created by the Hyper-V VM Creator.
 - Microsoft Hyper-V limits Guest VM GPU Partitioning VRAM to 4GB, regardless of Host PC's GPU VRAM size
+- **IMPORTANT:** Disable integrated graphics in the BIOS if using an AMD Ryzen CPU.  Intel-based integrated graphics are OK
 # Known Issues
 - None
 # What's New
@@ -58,3 +70,5 @@ Right-click the program and select **Run As Administrator**.
 - v8: Fixed Windows Edition detection to force DISM output to English
 - v9: Added VM Resolution
 - v10: GUI Consoles cannot be resized anymore
+- v11-13: Unreleased/unstable versions
+- v14: Added Optional Software auto installation: Parsec, VB Audio Cable, and Virtual Display Adapter
