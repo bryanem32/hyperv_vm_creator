@@ -25,9 +25,9 @@ Right-click the program and select **Run As Administrator**.
 | **Disk Size (GB)** | Size of the main VM hard drive (C:\) | Recommend **60GB or more** |
 | **Virtual Switch** | Hyper-V virtual switch to use | Program detects existing switches; usually **Default Switch** |
 | **VM Resolution** | VM Display Resolution | Display Resolution modified by QRes.exe on bootup|
-| **Enable Checkpoints** | Enable VM checkpoints | Keep **unchecked** for GPU Passthrough |
-| **Enable Dynamic Memory** | Allow dynamic memory allocation | Keep **unchecked** for GPU Passthrough |
-| **Enable Enhanced Session Mode** | Enable enhanced session mode | Keep **unchecked** for GPU Passthrough |
+| **Enable Checkpoints** | Enable VM checkpoints | Keep **unchecked** for GPU Partitioning |
+| **Enable Dynamic Memory** | Allow dynamic memory allocation | Keep **unchecked** for GPU Partitioning |
+| **Enable Enhanced Session Mode** | Enable enhanced session mode | Keep **unchecked** for GPU Partitioning |
 | **Start VM after creation** | Launch VM immediately after creation | Recommended to check for convenience |
 | **Parsec (Per Computer)** | Download and install latest Parsec with Per Computer option | Access the VM through Parsec |
 | **VB-Audio Cable** | Download and install VBCABLE_Driver_Pack45.zip from vb-audio.com | Adds sound to the VM with Parsec |
