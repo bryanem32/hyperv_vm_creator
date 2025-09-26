@@ -32,6 +32,7 @@ Right-click the program and select **Run As Administrator**.
 | **Parsec (Per Computer)** | Download and install latest Parsec with Per Computer option | Access the VM through Parsec |
 | **VB-Audio Cable** | Download and install VBCABLE_Driver_Pack45.zip from vb-audio.com | Adds sound to the VM with Parsec |
 | **Virtual Display Driver** | Download and install usbmmidd_v2.zip from amyuni.com | Creates a virtual display driver, allows Parsec to access the VM even if the console is not connected |
+| **Remote Desktop** | Enable Remote Desktop | Enables Remote Desktop for Admin users, useful if Hyper-V Video Console Freezes due to Micrsoft Updates) |
 ## Usage Notes
 - Powershell Scripts are available to be ran directly. The binary *.exe files are compiled with ps2exe for convenience.
 - If the program detects hyper-v is not running or installed, it will prompt to install hyper-v.  After enabling, it will prompt to restart the PC or not.
@@ -48,6 +49,7 @@ Right-click the program and select **Run As Administrator**.
   1. Latest Parsec is downloaded and installed with the "Per Computer" option
   2. VB Audio Cable is downloaded from www.vb-cable.com
   3. Virtual Display Adapter is downloaded from www.amyuni.com
+  4. Remote Desktop - Enable Remote Desktop (useful if Hyper-V Console Freezes due to Windows Updates)
 
 # 2. Virtual Machine GPU Update
 Right-click the program and select **Run As Administrator**.
@@ -72,3 +74,4 @@ Right-click the program and select **Run As Administrator**.
 - v10: GUI Consoles cannot be resized anymore
 - v11-13: Unreleased/unstable versions
 - v14: Added Optional Software auto installation: Parsec, VB Audio Cable, and Virtual Display Adapter
+- v15: Added enabling Remote Desktop (useful if Console freezes due to Windows Updates)
