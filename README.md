@@ -6,6 +6,7 @@ https://www.youtube.com/watch?v=MmZiHnfRjbc
 - Host PC that is capable of Virtualization
   1. Intel-based: Enable in the BIOS **Intel Virtualization Technology, Intel VT, VT-x, or Virtualization Extensions**
   2. AMD-based: Enable in the BIOS **AMD-V or AMD SVM**
+- Host PC minimum has 8GB Memory (16GB or Higher Recommended)
 - Windows 10 or 11 ISO Install. Save as an **".iso"** file
 - Hyper-V Host (Main PC) needs to be Windows 10/11 **Pro Edition**
 - VMs can be Windows 10/11 Home or Pro Edition
