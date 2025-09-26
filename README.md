@@ -1,3 +1,5 @@
+# Latest Release
+https://github.com/bryanem32/hyperv_vm_creator/archive/refs/tags/beta-v15.zip
 # YouTube Video of Programs in action
 https://www.youtube.com/watch?v=MmZiHnfRjbc
 # Requirements
