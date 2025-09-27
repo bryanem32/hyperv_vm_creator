@@ -1,7 +1,7 @@
 # Latest Release
 https://github.com/bryanem32/hyperv_vm_creator/archive/refs/tags/beta-v15x.zip
 # YouTube Video of Programs in action
-https://www.youtube.com/watch?v=MmZiHnfRjbc
+https://youtu.be/AJOiNEy4hVk
 # Requirements
 - Host PC that is capable of Virtualization
   1. Intel-based: Enable in the BIOS **Intel Virtualization Technology, Intel VT, VT-x, or Virtualization Extensions**
