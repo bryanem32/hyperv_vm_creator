@@ -78,3 +78,4 @@ Right-click the program and select **Run As Administrator**.
 - v11-13: Unreleased/unstable versions
 - v14: Added Optional Software auto installation: Parsec, VB Audio Cable, and Virtual Display Adapter
 - v15: Added enabling Remote Desktop (useful if Console freezes due to Windows Updates)
+- v16: Local password can now be blank (as requested)
