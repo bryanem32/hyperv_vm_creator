@@ -35,8 +35,8 @@ Right-click the program and select **Run As Administrator**.
 | **Parsec (Per Computer)** | Download and install latest Parsec with Per Computer option | Access the VM through Parsec |
 | **VB-Audio Cable** | Download and install VBCABLE_Driver_Pack45.zip from vb-audio.com | Adds sound to the VM with Parsec |
 | **Virtual Display Driver** | Download and install usbmmidd_v2.zip from amyuni.com | Creates a virtual display driver, allows Parsec to access the VM even if the console is not connected |
-| **Remote Desktop** | Enable Remote Desktop | Enables Remote Desktop for Admin users, useful if Hyper-V Video Console Freezes due to Micrsoft Updates) |
-| **Share Folder** | Creates a Share Folder in the Desktop| Creates a Shared folder and can be accessed from the host PC as "\\{vmname}\share" to copy files to the VM|
+| **Remote Desktop** | Enable Remote Desktop | Enables Remote Desktop for Admin users, useful if Hyper-V Video Console Freezes due to Micrsoft Updates |
+| **Share Folder** | Creates a Share Folder in the Desktop| Creates a Share Folder and can be accessed from the host PC as "\\\\vm-name\share" to copy files to the VM|
 ## Usage Notes
 - Powershell Scripts are available to be ran directly. The binary *.exe files are compiled with ps2exe for convenience.
 - If the program detects hyper-v is not running or installed, it will prompt to install hyper-v.  After enabling, it will prompt to restart the PC or not.
@@ -54,6 +54,7 @@ Right-click the program and select **Run As Administrator**.
   2. VB Audio Cable is downloaded from www.vb-cable.com
   3. Virtual Display Adapter is downloaded from www.amyuni.com
   4. Remote Desktop - Enable Remote Desktop (useful if Hyper-V Console Freezes due to Windows Updates)
+  5. Share Folder - Creates a folder named "share" on the Desktop, and shared as "share"
 
 # 2. Virtual Machine GPU Update
 Right-click the program and select **Run As Administrator**.
@@ -80,4 +81,4 @@ Right-click the program and select **Run As Administrator**.
 - v14: Added Optional Software auto installation: Parsec, VB Audio Cable, and Virtual Display Adapter
 - v15: Added enabling Remote Desktop (useful if Console freezes due to Windows Updates)
 - v16: Local password can now be blank (as requested)
-- v17: Added Share Folder - Creates a folder named "share" in the VM Desktop and shared as "share" (e.g. \\\vmname-01\share\\)
+- v17: Added Share Folder - Creates a folder named "share" in the VM Desktop and shared as "share" (e.g. \\\vm-name\share\\)
