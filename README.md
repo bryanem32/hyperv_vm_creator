@@ -1,5 +1,5 @@
 # Latest Release
-https://github.com/bryanem32/hyperv_vm_creator/archive/refs/tags/beta-v17.zip
+https://github.com/bryanem32/hyperv_vm_creator/archive/refs/tags/beta-v18.zip
 # YouTube Video of Programs in action
 https://youtu.be/AJOiNEy4hVk
 # Requirements
@@ -37,6 +37,7 @@ Right-click the program and select **Run As Administrator**.
 | **Virtual Display Driver** | Download and install usbmmidd_v2.zip from amyuni.com | Creates a virtual display driver, allows Parsec to access the VM even if the console is not connected |
 | **Remote Desktop** | Enable Remote Desktop | Enables Remote Desktop for Admin users, useful if Hyper-V Video Console Freezes due to Micrsoft Updates |
 | **Share Folder** | Creates a Share Folder in the Desktop| Creates a Share Folder and can be accessed from the host PC as "\\\\vm-name\share" to copy files to the VM|
+| **Pause Windows Updates** | Disables Windows Updates | Disables Windows Updates for a year.  Can be re-enabled from Windows Updates GUI|
 ## Usage Notes
 - Powershell Scripts are available to be ran directly. The binary *.exe files are compiled with ps2exe for convenience.
 - If the program detects hyper-v is not running or installed, it will prompt to install hyper-v.  After enabling, it will prompt to restart the PC or not.
@@ -55,6 +56,7 @@ Right-click the program and select **Run As Administrator**.
   3. Virtual Display Adapter is downloaded from www.amyuni.com
   4. Remote Desktop - Enable Remote Desktop (useful if Hyper-V Console Freezes due to Windows Updates)
   5. Share Folder - Creates a folder named "share" on the Desktop, and shared as "share"
+  6. Pause Windows Updates - Disables Windows Updates for a year.  Can be re-enabled from Windows Updates GUI
 
 # 2. Virtual Machine GPU Update
 Right-click the program and select **Run As Administrator**.
@@ -82,3 +84,4 @@ Right-click the program and select **Run As Administrator**.
 - v15: Added enabling Remote Desktop (useful if Console freezes due to Windows Updates)
 - v16: Local password can now be blank (as requested)
 - v17: Added Share Folder - Creates a folder named "share" in the VM Desktop and shared as "share" (e.g. \\\vm-name\share\\)
+- v18: Added Pause Windows Updates - Disable Windows Updates to stop patches from breaking GPU-P
