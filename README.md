@@ -1,5 +1,5 @@
 # Latest Release
-https://github.com/bryanem32/hyperv_vm_creator/archive/refs/tags/beta-v19.zip
+https://github.com/bryanem32/hyperv_vm_creator/archive/refs/tags/beta-v20.zip
 # YouTube Video of Programs in action
 https://youtu.be/AJOiNEy4hVk
 # Requirements
@@ -38,6 +38,7 @@ Right-click the program and select **Run As Administrator**.
 | **Remote Desktop** | Enable Remote Desktop | Enables Remote Desktop for Admin users, useful if Hyper-V Video Console Freezes due to Micrsoft Updates |
 | **Share Folder** | Creates a Share Folder in the Desktop| Creates a Share Folder and can be accessed from the host PC as "\\\\vm-name\share" to copy files to the VM|
 | **Pause Windows Updates** | Pauses Windows Updates | Pauses Windows Updates for a year.  Can be re-enabled from Windows Updates GUI|
+| **Full Windows Updates** | Runs Windows Updates after user login | Recommended now that Microsoft has fixed the Hyper-V Video Adapter Issue |
 ## Usage Notes
 - Powershell Scripts are available to be ran directly. The binary *.exe files are compiled with ps2exe for convenience.
 - If the program detects hyper-v is not running or installed, it will prompt to install hyper-v.  After enabling, it will prompt to restart the PC or not.
@@ -57,6 +58,7 @@ Right-click the program and select **Run As Administrator**.
   4. Remote Desktop - Enable Remote Desktop (useful if Hyper-V Console Freezes due to Windows Updates)
   5. Share Folder - Creates a folder named "share" on the Desktop, and shared as "share"
   6. Pause Windows Updates - Pauses Windows Updates for a year.  Can be re-enabled from Windows Updates GUI
+  7. Full Windows Updates - Runs Windows Updates after user login. Recommended now that Microsoft has fixed the Hyper-V Video Adapter Issue
 
 # 2. Virtual Machine GPU Update
 Right-click the program and select **Run As Administrator**.
@@ -86,3 +88,4 @@ Right-click the program and select **Run As Administrator**.
 - v17: Added Share Folder - Creates a folder named "share" in the VM Desktop and shared as "share" (e.g. \\\vm-name\share\\)
 - v18: Added Pause Windows Updates - Pauses Windows Updates to stop patches from breaking GPU-P
 - v19: Fixed local user's password to never expire
+- v20: Added Full Windows Updates - Runs Windows Updates after user login. Recommended now that Microsoft has fixed the Hyper-V Video Adapter Issue
