@@ -1,5 +1,5 @@
 # Latest Release
-https://github.com/bryanem32/hyperv_vm_creator/archive/refs/tags/beta-v20.zip
+https://github.com/bryanem32/hyperv_vm_creator/archive/refs/tags/beta-v21.zip
 # YouTube Video of Programs in action
 https://youtu.be/AJOiNEy4hVk
 # Requirements
@@ -89,3 +89,4 @@ Right-click the program and select **Run As Administrator**.
 - v18: Added Pause Windows Updates - Pauses Windows Updates to stop patches from breaking GPU-P
 - v19: Fixed local user's password to never expire
 - v20: Added Full Windows Updates - Runs Windows Updates after user login. Recommended now that Microsoft has fixed the Hyper-V Video Adapter Issue
+- v21: Added all Windows Updates including Previews (required for GPU-P fix for Windows 1125H2)
