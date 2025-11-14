@@ -12,6 +12,7 @@ https://youtu.be/AJOiNEy4hVk
 - VMs can be Windows 10/11 Home or Pro Edition
 - GPU Partitioning require driver support for WDDM 2.5 (**NVIDIA GTX 10-Series or newer, AMD RX Vega or newer**)
 - **IMPORTANT:** If using an AMD-based CPU, it is recommended to disable the integrated graphics adapter in the BIOS. GPU Partitioning might utilize the AMD Integrated GPU instead of the discreet GPU
+- **IMPORTANT:** Enable "Full Windows Updates" if using Windows 1125H2 ISO, otherwise Hyper-V Console will freeze after GPU-P update
 # 1. Hyper-V VM Creator
 Right-click the program and select **Run As Administrator**.
 ## Parameters
