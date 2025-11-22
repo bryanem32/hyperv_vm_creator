@@ -7,12 +7,18 @@ https://youtu.be/AJOiNEy4hVk
   1. Intel-based: Enable in the BIOS **Intel Virtualization Technology, Intel VT, VT-x, or Virtualization Extensions**
   2. AMD-based: Enable in the BIOS **AMD-V or AMD SVM**
 - Host PC minimum has 8GB Memory (16GB or Higher Recommended)
-- Windows 10 or 11 ISO Install. Save as an **".iso"** file
+- For GPU-P Support, Hyper-V Virtual Machines need to be Windows 10 2004 or later, and Windows 11 23H2 or later
+- ISO Download Links
+  1. Windows 10 2004 (ARCHIVE): https://archive.org/download/win-10-2004-english-x-64_202010/Win10_2004_English_x64.iso
+  2. Windows 10 22H2 (ARCHIVE): https://archive.org/download/win10_22h2/Win10_22H2_English_x64.iso
+  3. Windows 11 23H2 (ARCHIVE): https://archive.org/download/win-11-23h2/Win11_23H2_English_x64.iso
+  4. Windows 11 24H2 (ARCHIVE): https://archive.org/download/Win11_24H2_English_x64/Win11_24H2_English_x64.iso
+  5. Windows 11 25H2 **(CURRENT)**: https://www.microsoft.com/en-us/software-download/windows11
 - Hyper-V Host (Main PC) needs to be Windows 10/11 **Pro Edition**
 - VMs can be Windows 10/11 Home or Pro Edition
 - GPU Partitioning require driver support for WDDM 2.5 (**NVIDIA GTX 10-Series or newer, AMD RX Vega or newer**)
 - **IMPORTANT:** If using an AMD-based CPU, it is recommended to disable the integrated graphics adapter in the BIOS. GPU Partitioning might utilize the AMD Integrated GPU instead of the discreet GPU
-- **IMPORTANT:** Enable "Full Windows Updates" if using Windows 1125H2 ISO, otherwise Hyper-V Console will freeze after GPU-P update
+- **IMPORTANT:** Enable "Full Windows Updates" if using Windows 11 25H2 ISO, otherwise Hyper-V Console will freeze after GPU-P update
 # 1. Hyper-V VM Creator
 Right-click the program and select **Run As Administrator**.
 ## Parameters
