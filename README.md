@@ -97,3 +97,4 @@ Right-click the program and select **Run As Administrator**.
 - v19: Fixed local user's password to never expire
 - v20: Added Full Windows Updates - Runs Windows Updates after user login. Recommended now that Microsoft has fixed the Hyper-V Video Adapter Issue
 - v21: Added all Windows Updates including Previews (required for GPU-P fix for Windows 1125H2)
+- v22: Fixed Driver Updates now deletes VM FileRepository Folder if it exists first before updating
