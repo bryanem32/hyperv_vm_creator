@@ -17,7 +17,7 @@ https://youtu.be/AJOiNEy4hVk
 - Hyper-V Host (Main PC) needs to be Windows 10/11 **Pro Edition**
 - VMs can be Windows 10/11 Home or Pro Edition
 - GPU Partitioning require driver support for WDDM 2.5 (**NVIDIA GTX 10-Series or newer, AMD RX Vega or newer**)
-- **IMPORTANT:** If using an AMD-based CPU, it is recommended to disable the integrated graphics adapter in the BIOS. GPU Partitioning might utilize the AMD Integrated GPU instead of the discreet GPU
+- **IMPORTANT:** Virtual Machine GPU Updater now can use Integrated Graphics instead of the Discreet GPU
 - **IMPORTANT:** Enable "Full Windows Updates" if using Windows 11 25H2 ISO, otherwise Hyper-V Console will freeze after GPU-P update
 # 1. Hyper-V VM Creator
 Right-click the program and select **Run As Administrator**.
@@ -77,7 +77,7 @@ Right-click the program and select **Run As Administrator**.
 - This program is separate from the Hyper-V VM Creator because this can be used independently after the drivers are updated on the Main Host PC
 - This program is only tested/verified to work on VMs created by the Hyper-V VM Creator.
 - Microsoft Hyper-V limits Guest VM GPU Partitioning VRAM to 4GB, regardless of Host PC's GPU VRAM size
-- **IMPORTANT:** Disable integrated graphics in the BIOS if using an AMD Ryzen CPU.  Intel-based integrated graphics are OK
+- **IMPORTANT:** Virtual Machine GPU Updater now can use Integrated Graphics instead of the Discreet GPU
 # Known Issues
 - None
 # What's New
@@ -98,3 +98,4 @@ Right-click the program and select **Run As Administrator**.
 - v20: Added Full Windows Updates - Runs Windows Updates after user login. Recommended now that Microsoft has fixed the Hyper-V Video Adapter Issue
 - v21: Added all Windows Updates including Previews (required for GPU-P fix for Windows 1125H2)
 - v22: Fixed Driver Updates now deletes VM FileRepository Folder if it exists first before updating
+- v23: Added ability to select GPU-P enabled Video Card to assign to the VM; GPU Update script now deletes existing GPU-P Adapter before injecting drivers.
