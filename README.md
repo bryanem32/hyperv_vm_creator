@@ -72,6 +72,7 @@ Right-click the program and select **Run As Administrator**.
 ## Parameters
 - Click on the checkbox on the VM's for the GPU drivers to be updated
 - Click on the checkbox "Start VM after update" to start the VMs selected after updating.
+- Select the GPU to be uses with the VM on the dropdown list
 ## Usage Notes
 - Updating the GPU drivers requires for the VMs to shutdown.  The program will shutdown the VMs automatically
 - This program is separate from the Hyper-V VM Creator because this can be used independently after the drivers are updated on the Main Host PC
