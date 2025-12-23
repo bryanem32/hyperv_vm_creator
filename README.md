@@ -1,5 +1,5 @@
 # Latest Release
-https://github.com/bryanem32/hyperv_vm_creator/archive/refs/tags/beta-v23.zip
+https://github.com/bryanem32/hyperv_vm_creator/archive/refs/tags/beta-v24.zip
 # YouTube Video of Programs in action
 https://youtu.be/AJOiNEy4hVk
 # Requirements
@@ -15,9 +15,9 @@ https://youtu.be/AJOiNEy4hVk
   4. Windows 11 24H2 (ARCHIVE): https://archive.org/download/Win11_24H2_English_x64/Win11_24H2_English_x64.iso
   5. Windows 11 25H2 **(CURRENT)**: https://www.microsoft.com/en-us/software-download/windows11
 - Hyper-V Host (Main PC) needs to be Windows 10/11 **Pro Edition**
-- VMs can be Windows 10/11 Home or Pro Edition
+- VMs can be Windows 10/11* Home or Pro Edition
 - GPU Partitioning require driver support for WDDM 2.5 (**NVIDIA GTX 10-Series or newer, AMD RX Vega or newer**)
-- **IMPORTANT:** Virtual Machine GPU Updater now can use Integrated Graphics instead of the Discreet GPU
+- **IMPORTANT:** *Only on a Windows 11 PRO Host, Virtual Machine GPU Updater can use Integrated Graphics or Discreet GPU for the VM
 - **IMPORTANT:** Enable "Full Windows Updates" if using Windows 11 25H2 ISO, otherwise Hyper-V Console will freeze after GPU-P update
 # 1. Hyper-V VM Creator
 Right-click the program and select **Run As Administrator**.
@@ -72,13 +72,13 @@ Right-click the program and select **Run As Administrator**.
 ## Parameters
 - Click on the checkbox on the VM's for the GPU drivers to be updated
 - Click on the checkbox "Start VM after update" to start the VMs selected after updating.
-- Select the GPU to be uses with the VM on the dropdown list
+- On a **Windows 11 PRO** Host only: Select the GPU to be uses with the VM on the dropdown list
 ## Usage Notes
 - Updating the GPU drivers requires for the VMs to shutdown.  The program will shutdown the VMs automatically
 - This program is separate from the Hyper-V VM Creator because this can be used independently after the drivers are updated on the Main Host PC
 - This program is only tested/verified to work on VMs created by the Hyper-V VM Creator.
 - Microsoft Hyper-V limits Guest VM GPU Partitioning VRAM to 4GB, regardless of Host PC's GPU VRAM size
-- **IMPORTANT:** Virtual Machine GPU Updater now can use Integrated Graphics instead of the Discreet GPU
+- **IMPORTANT:** On a Windows 11 PRO Host, Virtual Machine GPU Updater now can use Integrated Graphics or Discreet GPU for the VM
 # Known Issues
 - None
 # What's New
@@ -100,3 +100,4 @@ Right-click the program and select **Run As Administrator**.
 - v21: Added all Windows Updates including Previews (required for GPU-P fix for Windows 1125H2)
 - v22: Fixed Driver Updates now deletes VM FileRepository Folder if it exists first before updating
 - v23: Added ability to select GPU-P enabled Video Card to assign to the VM; GPU Update script now deletes existing GPU-P Adapter before injecting drivers.
+- v24: Updated GPU Update to check for Windows 11 PRO Host; Only Windows 11 PRO Host can enable iGPU for GPU-P in a VM
