@@ -1,5 +1,5 @@
 # Latest Release
-https://github.com/bryanem32/hyperv_vm_creator/archive/refs/tags/beta-v24.zip
+https://github.com/bryanem32/hyperv_vm_creator/archive/refs/tags/beta-v25.zip
 # YouTube Video of Programs in action
 https://youtu.be/AJOiNEy4hVk
 # Requirements
@@ -17,7 +17,8 @@ https://youtu.be/AJOiNEy4hVk
 - Hyper-V Host (Main PC) needs to be Windows 10/11 **Pro Edition**
 - VMs can be Windows 10/11* Home or Pro Edition
 - GPU Partitioning require driver support for WDDM 2.5 (**NVIDIA GTX 10-Series or newer, AMD RX Vega or newer**)
-- **IMPORTANT:** *Only on a Windows 11 PRO Host, Virtual Machine GPU Updater can use Integrated Graphics or Discreet GPU for the VM
+- **IMPORTANT:** On Windows 10 PRO Host (Main PC), Disable Integrated Graphics (iGPU) if using an AMD CPU
+- **IMPORTANT:** On Windows 11 PRO Host (Main PC), Virtual Machine GPU Updater can pick between Integrated Graphics or Discreet GPU for the VM
 - **IMPORTANT:** Enable "Full Windows Updates" if using Windows 11 25H2 ISO, otherwise Hyper-V Console will freeze after GPU-P update
 # 1. Hyper-V VM Creator
 Right-click the program and select **Run As Administrator**.
@@ -78,7 +79,8 @@ Right-click the program and select **Run As Administrator**.
 - This program is separate from the Hyper-V VM Creator because this can be used independently after the drivers are updated on the Main Host PC
 - This program is only tested/verified to work on VMs created by the Hyper-V VM Creator.
 - Microsoft Hyper-V limits Guest VM GPU Partitioning VRAM to 4GB, regardless of Host PC's GPU VRAM size
-- **IMPORTANT:** On a Windows 11 PRO Host, Virtual Machine GPU Updater now can use Integrated Graphics or Discreet GPU for the VM
+- **IMPORTANT:** On Windows 10 PRO Host (Main PC), Disable Integrated Graphics (iGPU) if using an AMD CPU
+- **IMPORTANT:** On Windows 11 PRO Host (Main PC), Virtual Machine GPU Updater can pick between Integrated Graphics or Discreet GPU for the VM
 # Known Issues
 - None
 # What's New
@@ -101,3 +103,4 @@ Right-click the program and select **Run As Administrator**.
 - v22: Fixed Driver Updates now deletes VM FileRepository Folder if it exists first before updating
 - v23: Added ability to select GPU-P enabled Video Card to assign to the VM; GPU Update script now deletes existing GPU-P Adapter before injecting drivers.
 - v24: Updated GPU Update to check for Windows 11 PRO Host; Only Windows 11 PRO Host can enable iGPU for GPU-P in a VM
+- v25: Fixed OS Detection bug
