@@ -1,5 +1,5 @@
 # Latest Release
-https://github.com/bryanem32/hyperv_vm_creator/archive/refs/tags/beta-v25.zip
+https://github.com/bryanem32/hyperv_vm_creator/archive/refs/tags/beta-v26.zip
 # YouTube Video of Programs in action
 https://youtu.be/AJOiNEy4hVk
 # Requirements
@@ -104,3 +104,4 @@ Right-click the program and select **Run As Administrator**.
 - v23: Added ability to select GPU-P enabled Video Card to assign to the VM; GPU Update script now deletes existing GPU-P Adapter before injecting drivers.
 - v24: Updated GPU Update to check for Windows 11 PRO Host; Only Windows 11 PRO Host can enable iGPU for GPU-P in a VM
 - v25: Fixed OS Detection bug
+- v26: Fixed Windows 10 Host using Windows 11 GPU-P Adapter instance bug; For Windows 11 Hosts, option to remove GPU-P Adapter only
