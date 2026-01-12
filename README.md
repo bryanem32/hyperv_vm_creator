@@ -1,5 +1,5 @@
 # Latest Release
-https://github.com/bryanem32/hyperv_vm_creator/archive/refs/tags/beta-v28.zip
+https://github.com/bryanem32/hyperv_vm_creator/archive/refs/tags/beta-v29.zip
 # YouTube Video of Programs in action
 https://youtu.be/AJOiNEy4hVk
 # Requirements
@@ -107,3 +107,4 @@ Right-click the program and select **Run As Administrator**.
 - v26: Fixed Windows 10 Host using Windows 11 GPU-P Adapter instance bug; For Windows 11 Hosts, option to remove GPU-P Adapter only
 - v27: Re-arranged GUI Window and options for Hosts with Display Resolution less than 1920x1080
 - v28: Log Boxes Color now with Dark Background and Light Green Font, Fixed GPU Updater layout to accomodate for more VMs
+- v29: Fixed Log Box bug
