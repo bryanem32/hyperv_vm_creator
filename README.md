@@ -1,5 +1,5 @@
 # Latest Release
-https://github.com/bryanem32/hyperv_vm_creator/archive/refs/tags/beta-v29.zip
+https://github.com/bryanem32/hyperv_vm_creator/archive/refs/tags/beta-v30.zip
 # YouTube Video of Programs in action
 https://youtu.be/AJOiNEy4hVk
 # Requirements
@@ -36,6 +36,7 @@ Right-click the program and select **Run As Administrator**.
 | **Disk Size (GB)** | Size of the main VM hard drive (C:\) | Recommend **60GB or more** |
 | **Virtual Switch** | Hyper-V virtual switch to use | Program detects existing switches; usually **Default Switch** |
 | **VM Resolution** | VM Display Resolution | Display Resolution modified by QRes.exe on bootup|
+| **VM Profile** | VM Profile Dropdown | Enables Recommended Checkboxes based on Windows Version |
 | **Enable Checkpoints** | Enable VM checkpoints | Keep **unchecked** for GPU Partitioning |
 | **Enable Dynamic Memory** | Allow dynamic memory allocation | Keep **unchecked** for GPU Partitioning |
 | **Enable Enhanced Session Mode** | Enable enhanced session mode | Keep **unchecked** for GPU Partitioning |
@@ -108,3 +109,4 @@ Right-click the program and select **Run As Administrator**.
 - v27: Re-arranged GUI Window and options for Hosts with Display Resolution less than 1920x1080
 - v28: Log Boxes Color now with Dark Background and Light Green Font, Fixed GPU Updater layout to accomodate for more VMs
 - v29: Fixed Log Box bug
+- v30: Added VM Profile Dropdown to enable proper checkboxes based on Windows Version with or without Parsec
