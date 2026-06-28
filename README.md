@@ -1,5 +1,5 @@
 # Latest Release
-https://github.com/bryanem32/hyperv_vm_creator/archive/refs/tags/beta-v31.zip
+https://github.com/bryanem32/hyperv_vm_creator/archive/refs/tags/beta-v32.zip
 # YouTube Video of Programs in action
 https://www.youtube.com/watch?v=W5pRCdLmnFY
 # Requirements
@@ -13,7 +13,8 @@ https://www.youtube.com/watch?v=W5pRCdLmnFY
   2. Windows 10 22H2 (ARCHIVE): https://archive.org/download/win10_22h2/Win10_22H2_English_x64.iso
   3. Windows 11 23H2 (ARCHIVE): https://archive.org/download/win-11-23h2/Win11_23H2_English_x64.iso
   4. Windows 11 24H2 (ARCHIVE): https://archive.org/download/Win11_24H2_English_x64/Win11_24H2_English_x64.iso
-  5. Windows 11 25H2 **(CURRENT)**: https://www.microsoft.com/en-us/software-download/windows11
+  5. Windows 11 25H2 (ARCHIVE): https://archive.org/download/os-win-11-25-h-2-english-x-64/OS_Win11_25H2_English_x64.iso
+  6. Windows 11 25H2 v2 **(CURRENT)**: https://www.microsoft.com/en-us/software-download/windows11
 - Hyper-V Host (Main PC) needs to be Windows 10/11 **Pro Edition**
 - VMs can be Windows 10/11* Home or Pro Edition
 - GPU Partitioning require driver support for WDDM 2.5 (**NVIDIA GTX 10-Series or newer, AMD RX Vega or newer**)
@@ -48,6 +49,7 @@ Right-click the program and select **Run As Administrator**.
 | **Share Folder** | Creates a Share Folder in the Desktop| Creates a Share Folder and can be accessed from the host PC as "\\\\vm-name\share" to copy files to the VM|
 | **Pause Windows Updates** | Pauses Windows Updates | Pauses Windows Updates for a year.  Can be re-enabled from Windows Updates GUI|
 | **Full Windows Updates** | Runs Windows Updates after user login | Recommended now that Microsoft has fixed the Hyper-V Video Adapter Issue |
+| **Create Desktop Shortcut** | Creates Desktop Shortcut of the VM | Creates a Hyper-V Console Shortcut to the VM |
 ## Usage Notes
 - Powershell Scripts are available to be ran directly. The binary *.exe files are compiled with ps2exe for convenience.
 - If the program detects hyper-v is not running or installed, it will prompt to install hyper-v.  After enabling, it will prompt to restart the PC or not.
@@ -68,6 +70,7 @@ Right-click the program and select **Run As Administrator**.
   5. Share Folder - Creates a folder named "share" on the Desktop, and shared as "share"
   6. Pause Windows Updates - Pauses Windows Updates for a year.  Can be re-enabled from Windows Updates GUI
   7. Full Windows Updates - Runs Windows Updates after user login. Recommended now that Microsoft has fixed the Hyper-V Video Adapter Issue
+  8. Create Desktop Shortcut - Creates Desktop Shortcut of the VM. Creates a Hyper-V Console Shortcut to the VM
 
 # 2. Virtual Machine GPU Update
 Right-click the program and select **Run As Administrator**.
@@ -111,3 +114,4 @@ Right-click the program and select **Run As Administrator**.
 - v29: Fixed Log Box bug
 - v30: Added VM Profile Dropdown to enable proper checkboxes based on Windows Version with or without Parsec
 - v31: Added VM Profile "Windows 11 25H2 V2" (Release Date 3/10/2026 OS Build 26200.8037) - This updated version works with GPU-P without needing to be fully patched first, compared to the initial release of Windows 11 25H2
+- v32: Added option to create a Desktop Shortcut of the VM
