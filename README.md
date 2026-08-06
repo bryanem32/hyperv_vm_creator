@@ -1,5 +1,5 @@
 # Latest Release
-https://github.com/bryanem32/hyperv_vm_creator/archive/refs/tags/beta-v32.zip
+https://github.com/bryanem32/hyperv_vm_creator/archive/refs/tags/beta-v33.zip
 # YouTube Video of Programs in action
 https://www.youtube.com/watch?v=W5pRCdLmnFY
 # Requirements
@@ -75,6 +75,7 @@ Right-click the program and select **Run As Administrator**.
 # 2. Virtual Machine GPU Update
 Right-click the program and select **Run As Administrator**.
 ## Parameters
+- Click on the checkbox "SELECT ALL VMS" to select all VMs at once
 - Click on the checkbox on the VM's for the GPU drivers to be updated
 - Click on the checkbox "Start VM after update" to start the VMs selected after updating.
 - On a **Windows 11 PRO** Host only: Select the GPU to be used with the VM on the dropdown list
@@ -115,3 +116,4 @@ Right-click the program and select **Run As Administrator**.
 - v30: Added VM Profile Dropdown to enable proper checkboxes based on Windows Version with or without Parsec
 - v31: Added VM Profile "Windows 11 25H2 V2" (Release Date 3/10/2026 OS Build 26200.8037) - This updated version works with GPU-P without needing to be fully patched first, compared to the initial release of Windows 11 25H2
 - v32: Added option to create a Desktop Shortcut of the VM
+- v33: Fixed Shortcut to Desktop bug if Desktop is relocated from the default path; Addes "SELECT ALL VMS" checkbox in Virtual Machine GPU Update script
