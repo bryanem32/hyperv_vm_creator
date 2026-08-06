@@ -116,4 +116,4 @@ Right-click the program and select **Run As Administrator**.
 - v30: Added VM Profile Dropdown to enable proper checkboxes based on Windows Version with or without Parsec
 - v31: Added VM Profile "Windows 11 25H2 V2" (Release Date 3/10/2026 OS Build 26200.8037) - This updated version works with GPU-P without needing to be fully patched first, compared to the initial release of Windows 11 25H2
 - v32: Added option to create a Desktop Shortcut of the VM
-- v33: Fixed Shortcut to Desktop bug if Desktop is relocated from the default path; Addes "SELECT ALL VMS" checkbox in Virtual Machine GPU Update script
+- v33: Fixed Shortcut to Desktop bug if Desktop is relocated from the default path; Added "SELECT ALL VMS" checkbox in Virtual Machine GPU Update script
