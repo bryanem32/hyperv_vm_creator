@@ -1,5 +1,5 @@
 # Latest Release
-https://github.com/bryanem32/hyperv_vm_creator/archive/refs/tags/beta-v33.zip
+https://github.com/bryanem32/hyperv_vm_creator/archive/refs/tags/beta-v34.zip
 # YouTube Video of Programs in action
 https://www.youtube.com/watch?v=W5pRCdLmnFY
 # Requirements
@@ -14,7 +14,8 @@ https://www.youtube.com/watch?v=W5pRCdLmnFY
   3. Windows 11 23H2 (ARCHIVE): https://archive.org/download/win-11-23h2/Win11_23H2_English_x64.iso
   4. Windows 11 24H2 (ARCHIVE): https://archive.org/download/Win11_24H2_English_x64/Win11_24H2_English_x64.iso
   5. Windows 11 25H2 (ARCHIVE): https://archive.org/download/os-win-11-25-h-2-english-x-64/OS_Win11_25H2_English_x64.iso
-  6. Windows 11 25H2 v2 **(CURRENT)**: https://www.microsoft.com/en-us/software-download/windows11
+  6. Windows 11 25H2 v2 (ARCHIVE): https://archive.org/download/win11-25h2-english-x64-v2/Win11_25H2_English_x64_v2.iso
+  7. Windows 11 26H2 **(CURRENT)**: https://www.microsoft.com/en-us/software-download/windows11
 - Hyper-V Host (Main PC) needs to be Windows 10/11 **Pro Edition**
 - VMs can be Windows 10/11* Home or Pro Edition
 - GPU Partitioning require driver support for WDDM 2.5 (**NVIDIA GTX 10-Series or newer, AMD RX Vega or newer**)
@@ -117,3 +118,4 @@ Right-click the program and select **Run As Administrator**.
 - v31: Added VM Profile "Windows 11 25H2 V2" (Release Date 3/10/2026 OS Build 26200.8037) - This updated version works with GPU-P without needing to be fully patched first, compared to the initial release of Windows 11 25H2
 - v32: Added option to create a Desktop Shortcut of the VM
 - v33: Fixed Shortcut to Desktop bug if Desktop is relocated from the default path; Added "SELECT ALL VMS" checkbox in Virtual Machine GPU Update script
+- v34: Added VM Profile "Windows 11 26H2" - Works with GPU-P with no need to patch
