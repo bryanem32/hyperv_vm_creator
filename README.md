@@ -1,5 +1,5 @@
 # Latest Release
-https://github.com/bryanem32/hyperv_vm_creator/archive/refs/tags/beta-v34.zip
+https://github.com/bryanem32/hyperv_vm_creator/archive/refs/tags/beta-v35.zip
 # YouTube Video of Programs in action
 https://www.youtube.com/watch?v=W5pRCdLmnFY
 # Requirements
@@ -119,3 +119,4 @@ Right-click the program and select **Run As Administrator**.
 - v32: Added option to create a Desktop Shortcut of the VM
 - v33: Fixed Shortcut to Desktop bug if Desktop is relocated from the default path; Added "SELECT ALL VMS" checkbox in Virtual Machine GPU Update script
 - v34: Added VM Profile "Windows 11 26H2" - Works with GPU-P with no need to patch
+- v35: Fixed GPU selection that selects only PCI Devices that are configured correctly
