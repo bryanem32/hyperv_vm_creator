@@ -120,3 +120,4 @@ Right-click the program and select **Run As Administrator**.
 - v33: Fixed Shortcut to Desktop bug if Desktop is relocated from the default path; Added "SELECT ALL VMS" checkbox in Virtual Machine GPU Update script
 - v34: Added VM Profile "Windows 11 26H2" - Works with GPU-P with no need to patch
 - v35: Fixed GPU selection that selects only PCI Devices that are configured correctly
+- v36: Updated GPU selection to support multiple GPUs with the same names (e.g. SLI Setup)
